@@ -14,7 +14,7 @@ public class SmartRoom implements SmartDevice {
         System.out.println();
         for (SmartDevice device : devices) {
             status.append(device.getStatus()).append("");
-            System.out.println();
+            System.out.println() ;
         }
         return status.toString();
     }
