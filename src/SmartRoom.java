@@ -10,12 +10,12 @@ public class SmartRoom implements SmartDevice {
     public void turnOff() { devices.forEach(SmartDevice::turnOff); }
     @Override
     public String getStatus() {
-        StringBuilder status = new StringBuilder("Room Status:");
-        System.out.println();
+        StringBuilder status = new StringBuilder("Room Status:\n");
         for (SmartDevice device : devices) {
             status.append(device.getStatus()).append("");
-            System.out.println() ;
+            System.out.println();
         }
         return status.toString();
     }
+
 }
